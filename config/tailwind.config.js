@@ -19,6 +19,13 @@ module.exports = {
       color: {
         'brown-text': '#A57355',
       },
+      fontSize: {
+        '37px': '37px',
+      },
+      fontFamily: {
+        'libre': ['"Libre Baskerville"', 'serif'],
+        'mulish': ['"Mulish"', 'sans-serif'],
+      },
     },
   },
   plugins: [
