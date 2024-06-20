@@ -17,7 +17,7 @@ module.exports = {
         'dark-brown-bg': '#A57355',
         'deep-dark-bg': '#744D3C'
       },
-      color: {
+      colors: {
         'brown-text': '#A57355',
       },
       fontSize: {
