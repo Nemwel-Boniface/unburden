@@ -15,6 +15,7 @@ module.exports = {
       backgroundColor: {
         'top-nav-light-brown-bg': '#F3EBE6',
         'dark-brown-bg': '#A57355',
+        'deep-dark-bg': '#744D3C'
       },
       color: {
         'brown-text': '#A57355',
