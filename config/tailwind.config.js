@@ -26,6 +26,7 @@ module.exports = {
       fontFamily: {
         'libre': ['"Libre Baskerville"', 'serif'],
         'mulish': ['"Mulish"', 'sans-serif'],
+        'playwrite': ['"Playwrite MX"', 'sans-serif'],
       },
     },
   },
