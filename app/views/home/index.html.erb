@@ -27,7 +27,7 @@
     <div class="left1 w-full md:w-1/2">
       <h2 class="text-lg font-bold py-2 font-libre">How can I help you?</h2>
       <p class="text-sm py-2">If you’re experiencing any kind of mental illness or problem in relations.</p>
-      <a href="#" class="text-sm text-brown-500 underline">Explore Programs</a>
+      <a href="#" class="text-sm text-brown-text underline">Explore Programs</a>
     </div>
 
     <div class="w-full md:w-1/2">
@@ -70,7 +70,7 @@
       <span class="uppercase tracking-widest font-mulish">Let me introduce myself</span>
     </div>
 
-    <h3 class="text-lg md:text-xl lg:text-2xl font-bold font-libre">I’m Dr. Nemwel Boniface – Expert Psychologist from New York.</h3>
+    <h3 class="text-lg md:text-xl lg:text-2xl font-bold font-libre">I’m Dr. Nemwel Boniface – Expert Psychologist from Nairobi.</h3>
     <p class="text-base md:text-sm py-2">With over 15 years of experience in clinical psychology, I specialize in cognitive-behavioral therapy and trauma recovery. My practice focuses on helping individuals overcome anxiety, depression, and PTSD through evidence-based therapeutic techniques.</p>
     <p class="text-sm md:text-xs text-gray-500 py-2">I am dedicated to providing compassionate and personalized care to each of my clients, empowering them to achieve mental wellness and lead fulfilling lives.</p>
     
@@ -84,49 +84,48 @@
   </div>
 </div>
 
-<div class="practice">
-  <div class="left">
-    <div class="flex items-center space-x-2 mb-4 text-brown-text">
+
+<div class="practice flex flex-col lg:flex-row items-stretch justify-center text-white px-4 py-6 mb-12 md:px-8 lg:px-12 pt-12 relative bg-cover bg-center w-full" style="background-image: url('<%= asset_path('landing.jpeg') %>');">
+  <div class="absolute inset-0 bg-black bg-opacity-75 z-0"></div>
+  
+  <div class="relative z-10 left w-full lg:w-1/2 p-4 flex flex-col justify-center text-white">
+    <div class="flex items-center space-x-2 mb-4">
       <span class="w-2 h-2 bg-white rounded-full"></span>
       <span class="w-1/12 h-px bg-white"></span>
       <span class="uppercase tracking-widest font-mulish">My Practice</span>
     </div>
-
-    <h2>Personal & Individual therapy sessions.</h2>
-    <p>Venenatis dignissim montes commodo interdum semper magna Diam nascetur ad varius curabitur ante donec de proin auctor felis hendrerit tortor morbi vehicula.</p>
-    <a href="#">Find Programs</a>
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Personal & Individual therapy sessions.</h2>
+    <p class="text-base md:text-lg lg:text-xl mb-6">Our personal therapy sessions offer tailored support for your unique needs. Whether facing anxiety, depression, or other challenges, we provide a safe space to explore your thoughts and work on strategies to improve your well-being.</p>
+    <a href="#" class="bg-brown-text text-white px-4 py-2 rounded-md text-sm md:text-base lg:text-lg w-max">Find Programs</a>
   </div>
 
-  <div class="right">
-    <div class="item">
-      <i class="fa fa-star" aria-hidden="true"></i>
+  <div class="relative z-10 right w-full lg:w-1/2 p-4 flex flex-col space-y-4 mt-8 lg:mt-0 lg:grid lg:grid-cols-2 lg:gap-4">
+    <div class="item flex items-start space-x-4">
+      <i class="fa fa-star text-white p-2 bg-dark-brown-bg rounded-full text-xl" aria-hidden="true"></i>
       <div class="itemleft">
-        <h3>Adults</h3>
-        <p>Life-changing sessions for adults, no matter what age group they belong to.</p>
+        <h3 class="text-lg font-bold">Adults</h3>
+        <p class="text-sm">Life-changing sessions for adults, no matter what age group they belong to.</p>
       </div>
     </div>
-
-    <div class="item">
-      <i class="fa fa-star" aria-hidden="true"></i>
+    <div class="item flex items-start space-x-4">
+      <i class="fa fa-star text-white p-2 bg-dark-brown-bg rounded-full text-xl" aria-hidden="true"></i>
       <div class="itemleft">
-        <h3>Children</h3>
-        <p>A special session for your kids regarding personal problems and study.</p>
+        <h3 class="text-lg font-bold">Children</h3>
+        <p class="text-sm">A special session for your kids regarding personal problems and study.</p>
       </div>
     </div>
-
-    <div class="item">
-      <i class="fa fa-star" aria-hidden="true"></i>
+    <div class="item flex items-start space-x-4">
+      <i class="fa fa-star text-white p-2 bg-dark-brown-bg rounded-full text-xl" aria-hidden="true"></i>
       <div class="itemleft">
-        <h3>Families</h3>
-        <p>Join me with your family and we’ll dicuss your issues to make your bonds better.</p>
+        <h3 class="text-lg font-bold">Families</h3>
+        <p class="text-sm">Join me with your family and we’ll discuss your issues to make your bonds better.</p>
       </div>
     </div>
-
-    <div class="item">
-      <i class="fa fa-star" aria-hidden="true"></i>
+    <div class="item flex items-start space-x-4">
+      <i class="fa fa-star text-white p-2 bg-dark-brown-bg rounded-full text-xl" aria-hidden="true"></i>
       <div class="itemleft">
-        <h3>Businesses</h3>
-        <p>Arrange a business session for your organization to boost the outcome.</p>
+        <h3 class="text-lg font-bold">Businesses</h3>
+        <p class="text-sm">Arrange a business session for your organization to boost the outcome.</p>
       </div>
     </div>
   </div>
