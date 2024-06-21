@@ -15,13 +15,15 @@ module.exports = {
       backgroundColor: {
         'top-nav-light-brown-bg': '#F3EBE6',
         'dark-brown-bg': '#A57355',
-        'deep-dark-bg': '#744D3C'
+        'deep-dark-bg': '#744D3C',
+        'cream': '#F7F2EF',
       },
       colors: {
         'brown-text': '#A57355',
       },
       fontSize: {
         '37px': '37px',
+        'custom-size': '3rem',
       },
       fontFamily: {
         'libre': ['"Libre Baskerville"', 'serif'],
