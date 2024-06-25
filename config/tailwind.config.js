@@ -31,6 +31,10 @@ module.exports = {
         'mulish': ['"Mulish"', 'sans-serif'],
         'playwrite': ['"Playwrite MX"', 'sans-serif'],
       },
+      padding: {
+        '20vw': '20vw',
+        '7vw': '7vw',
+      },
     },
   },
   plugins: [

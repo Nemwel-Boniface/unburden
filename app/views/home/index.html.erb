@@ -179,50 +179,59 @@
 </div>
 
 
-<div class="programs">
-  <div class="flex items-center space-x-2 mb-4 text-brown-text">
+<div class="container mx-auto px-4 py-8">
+  <!-- Program Offerings Header -->
+  <div class="flex items-center space-x-2 mb-4 text-brown-text px-20vw">
     <span class="w-2 h-2 bg-dark-brown-bg rounded-full"></span>
     <span class="w-1/12 h-px bg-dark-brown-bg"></span>
     <span class="uppercase tracking-widest font-mulish">Program Offerings</span>
   </div>
-  <h2>Magical & Inspirational lessons for people seeking help.</h2>
 
-  <div class="individual programs">
-    <div class="program">
-      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-[220px] object-cover rounded" %>
-      <div class="body">
-        <h3>Dating and Relationships</h3>
-        <p>Life-changing sessions for adults, no matter what age group they belong to.</p>
-        <div>
-          <a href="#">Read More</a>
+  <!-- Main Heading -->
+  <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 px-20vw">
+    Magical & Inspirational lessons for people seeking help.
+  </h2>
+
+  <!-- Programs Section -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-7vw">
+    <!-- Program Card 1 -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-[220px] object-cover" %>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Dating and Relationships</h3>
+        <p class="text-gray-600 mb-4">Life-changing sessions for adults, no matter what age group they belong to.</p>
+        <div class="flex items-center space-x-2 text-dark-brown-bg">
+          <a href="#" class="font-semibold hover:underline">Read More</a>
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
       </div>
     </div>
 
-    <div class="program">
-      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-[220px] object-cover rounded" %>
-      <div class="body">
-        <h3>Dating and Relationships</h3>
-        <p>Life-changing sessions for adults, no matter what age group they belong to.</p>
-        <div>
-          <a href="#">Read More</a>
+    <!-- Program Card 2 -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-[220px] object-cover" %>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Grief & Loss Counseling</h3>
+        <p class="text-gray-600 mb-4">Supportive sessions for navigating the challenging times of grief and loss.</p>
+        <div class="flex items-center space-x-2 text-dark-brown-bg">
+          <a href="#" class="font-semibold hover:underline">Read More</a>
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
       </div>
     </div>
 
-    <div class="program">
-      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-[220px] object-cover rounded" %>
-      <div class="body">
-        <h3>Dating and Relationships</h3>
-        <p>Life-changing sessions for adults, no matter what age group they belong to.</p>
-        <div>
-          <a href="#">Read More</a>
+    <!-- Program Card 3 -->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-[220px] object-cover" %>
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Self Esteem Therapy</h3>
+        <p class="text-gray-600 mb-4">Empowering sessions to boost self-esteem and build confidence.</p>
+        <div class="flex items-center space-x-2 text-dark-brown-bg">
+          <a href="#" class="font-semibold hover:underline">Read More</a>
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
       </div>
     </div>
-    
   </div>
 </div>
+
