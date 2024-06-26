@@ -234,47 +234,53 @@
 </div>
 
 
-<div class="who_needs_therapy">
-  <div class="left">
+<div class="who_needs_therapy flex flex-col lg:flex-row bg-black text-white rounded-lg space-y-8 lg:space-y-0 lg:space-x-8 mb-12">
+  <div class="p-6 md:p-12 lg:p-16 lg:w-1/2">
     <div class="flex items-center space-x-2 mb-4">
       <span class="w-2 h-2 bg-white rounded-full"></span>
       <span class="w-1/12 h-px bg-white"></span>
-      <span class="uppercase tracking-widest font-mulish">Who needs a therapy</span>
+      <span class="uppercase tracking-widest font-mulish text-sm">Who needs a therapy</span>
     </div>
-    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Benefits of psychological therapy by an expert.</h2>
-    <p class="text-base md:text-lg lg:text-xl mb-6">My personal therapy sessions offers tailored support for your unique needs. Whether facing anxiety, depression, or other challenges, I provide a safe space to explore your thoughts and work on strategies to improve your well-being.</p>
-    <div class="bg-black text-white p-6 rounded-lg space-y-4">
-       <!-- Family Progress Bar -->
-      <div class="flex items-center justify-between">
-        <span class="font-semibold">Family</span>
-        <span class="font-semibold">65%</span>
-      </div>
-      <div class="w-full bg-gray-800 h-1 mb-4">
-        <div class="bg-white h-1" style="width: 65%;"></div>
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-libre font-bold mb-4">Benefits of psychological therapy by an expert.</h2>
+    <p class="text-base text-gray-400 md:text-lg lg:text-xl mb-6">My personal therapy sessions offer tailored support for your unique needs. Whether facing anxiety, depression, or other challenges, I provide a safe space to explore your thoughts and work on strategies to improve your well-being.</p>
+    
+    <div class="space-y-6">
+      <!-- Family Progress Bar -->
+      <div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="font-semibold">Family</span>
+          <span class="font-semibold">65%</span>
+        </div>
+        <div class="w-full bg-gray-700 h-1">
+          <div class="bg-white h-1" style="width: 65%;"></div>
+        </div>
       </div>
 
       <!-- Marriage & Love Progress Bar -->
-      <div class="flex items-center justify-between">
-        <span class="font-semibold">Marriage & Love</span>
-        <span class="font-semibold">95%</span>
+      <div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="font-semibold">Marriage & Love</span>
+          <span class="font-semibold">95%</span>
+        </div>
+        <div class="w-full bg-gray-700 h-1">
+          <div class="bg-white h-1" style="width: 95%;"></div>
+        </div>
       </div>
-      <div class="w-full bg-gray-800 h-1 mb-4">
-      <div class="bg-white h-1" style="width: 95%;"></div>
-    </div>
 
-    <!-- Life Coaching Progress Bar -->
-    <div class="flex items-center justify-between">
-      <span class="font-semibold">Life Coaching</span>
-      <span class="font-semibold">82%</span>
-    </div>
-    <div class="w-full bg-gray-800 h-1 mb-4">
-      <div class="bg-white h-1" style="width: 82%;"></div>
+      <!-- Life Coaching Progress Bar -->
+      <div>
+        <div class="flex items-center justify-between mb-1">
+          <span class="font-semibold">Life Coaching</span>
+          <span class="font-semibold">82%</span>
+        </div>
+        <div class="w-full bg-gray-700 h-1">
+          <div class="bg-white h-1" style="width: 82%;"></div>
+        </div>
+      </div>
     </div>
   </div>
 
-  </div>
-
-  <div class="right">
-    <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full object-cover" %>
+  <div class="right lg:w-1/2 flex justify-center items-center lg:h-auto">
+    <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-full object-cover rounded-lg lg:rounded-none" %>
   </div>
 </div>
