@@ -403,66 +403,69 @@
 </div>
 
 
-<div class="blog_posts">
+<div class="blog_posts px-4 pt-6 md:px-8 lg:px-16 mb-12">
   <div class="flex items-center space-x-2 mb-4">
     <span class="w-2 h-2 bg-dark-brown-bg rounded-full"></span>
     <span class="w-1/12 h-px bg-dark-brown-bg"></span>
-    <span class="uppercase text-brown-text tracking-widest font-mulish text-sm">The Process</span>
+    <span class="uppercase text-brown-text tracking-widest font-mulish text-sm text-bold">Recent blog posts</span>
   </div>
 
-  <div class="blog_post_title">
-    <h2 class="text-2xl md:text-3xl lg:text-4xl font-libre font-bold mb-4">Stay Motivated, read the weekly blog articles</h2>
-    <p class="text-base text-gray-500 md:text-lg lg:text-xl mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices magna vel lorem molestie, sed finibus leo placerat. Nulla non purus des venenatis, faucibus enim sed, porta leo.</p>
-  </div>
+  <div class="blog_post_title flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-4 mb-6">
+  <h2 class="text-xl md:text-2xl lg:text-3xl font-libre font-bold lg:w-1/2">
+    Stay Motivated, read the weekly blog articles
+  </h2>
+  <p class="text-base text-gray-500 text-l p-4 lg:pl-6 border-l-4 border-brown rounded-l-lg lg:w-1/2">
+    Discover insightful tips, inspiring stories, and practical advice to keep you motivated and focused. Our weekly blog articles are designed to help you navigate through life's challenges with confidence and positivity.
+  </p>
+</div>
 
-  <div class="blogs">
-    <div class="blog">
-      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-full object-cover rounded-lg lg:rounded-none" %>
-      <div>
-        <div class="blog_body_title">
-          <h4>Personal</h4>
-          <h4>2 min read</h4> 
+  <div class="blogs grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="blog bg-white rounded-lg overflow-hidden relative">
+      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-64 object-cover" %>
+      <div class="shadow-lg p-6 bg-white -mt-12 relative z-50 mx-4 rounded-lg border-gray-300">
+        <div class="blog_body_title flex justify-between text-gray-700 text-sm mb-2">
+          <h4 class="font-bold">Personal</h4>
+          <h4>2 min read</h4>
         </div>
-        <h2>A short break from Social Media is important.</h2>
-        <div class="blog_body_footer">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <p> Susan Lopez</p>
-          <p>Nov 6, 2020 </p>
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">A short break from Social Media is important.</h2>
+        <div class="blog_body_footer flex items-center text-gray-600 text-sm">
+          <i class="fa fa-user mr-2" aria-hidden="true"></i>
+          <p class="mr-4">Nemwel Boniface</p>
+          <p>Nov 6, 2020</p>
         </div>
       </div>
     </div>
 
-    <div class="blog">
-      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-full object-cover rounded-lg lg:rounded-none" %>
-      <div>
-        <div class="blog_body_title">
-          <h4>Personal</h4>
-          <h4>2 min read</h4> 
+    <div class="blog bg-white rounded-lg overflow-hidden">
+      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-64 object-cover" %>
+      <div class="shadow-lg p-6 bg-white -mt-12 relative z-50 mx-4 rounded-lg border-gray-300">
+        <div class="blog_body_title flex justify-between text-gray-700 text-sm mb-2">
+          <h4 class="font-bold">Personal</h4>
+          <h4>2 min read</h4>
         </div>
-        <h2>A short break from Social Media is important.</h2>
-        <div class="blog_body_footer">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <p> Susan Lopez</p>
-          <p>Nov 6, 2020 </p>
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Balancing your love and work life.</h2>
+        <div class="blog_body_footer flex items-center text-gray-600 text-sm">
+          <i class="fa fa-user mr-2" aria-hidden="true"></i>
+          <p class="mr-4">Nemwel Boniface</p>
+          <p>Nov 6, 2020</p>
         </div>
       </div>
     </div>
 
-    <div class="blog">
-      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-full object-cover rounded-lg lg:rounded-none" %>
-      <div>
-        <div class="blog_body_title">
-          <h4>Personal</h4>
-          <h4>2 min read</h4> 
+    <div class="blog bg-white rounded-lg overflow-hidden">
+      <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-64 object-cover" %>
+      <div class="shadow-lg p-6 bg-white -mt-12 relative z-50 mx-4 rounded-lg border border-gray-300">
+        <div class="blog_body_title flex justify-between text-gray-700 text-sm mb-2">
+          <h4 class="font-bold">Family</h4>
+          <h4>2 min read</h4>
         </div>
-        <h2>A short break from Social Media is important.</h2>
-        <div class="blog_body_footer">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <p> Susan Lopez</p>
-          <p>Nov 6, 2020 </p>
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Keeping your family Happy & Healthy.</h2>
+        <div class="blog_body_footer flex items-center text-gray-600 text-sm">
+          <i class="fa fa-user mr-2" aria-hidden="true"></i>
+          <p class="mr-4">Nemwel Boniface</p>
+          <p>Nov 6, 2020</p>
         </div>
       </div>
     </div>
-    
   </div>
 </div>
