@@ -1,21 +1,14 @@
-<div class="w-full">
-  <% if notice.present? %>
-    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-  <% end %>
-
-  <% content_for :title, "Programs" %>
-
-  <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl">Programs</h1>
-    <%= link_to "New program", new_program_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
-  </div>
-
-  <div id="programs" class="min-w-full">
-    <% @programs.each do |program| %>
-      <%= render program %>
-      <p>
-        <%= link_to "Show this program", program, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-      </p>
-    <% end %>
+<div class="relative bg-cover bg-center h-[70vh] w-full text-white" style="background-image: url('<%= asset_path('landing.jpeg') %>');">
+  <div class="absolute inset-0 bg-black bg-opacity-65"></div>
+  <div class="relative container mx-auto h-full flex items-center px-4 sm:px-6 md:px-8 lg:px-12 justify-center">  <div class="max-w-lg">
+      <div class="flex items-center space-x-2 mb-4 justify-center">
+        <span class="w-2 h-2 bg-white rounded-full"></span>
+        <span class="w-1/12 h-0.5 bg-white"></span>
+        <span class="text-white uppercase tracking-widest font-mulish">My Programs</span>
+      </div>
+      <h1 class="text-37px lg:text-50px font-libre font-bold leading-tight mb-4">
+        Complete set of programs designed to help people having mental issues.
+      </h1>
+    </div>
   </div>
 </div>

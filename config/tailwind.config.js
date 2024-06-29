@@ -24,6 +24,7 @@ module.exports = {
       },
       fontSize: {
         '37px': '37px',
+        '50px': '50px',
         'custom-size': '3rem',
       },
       fontFamily: {
