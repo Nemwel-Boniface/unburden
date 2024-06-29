@@ -1,6 +1,7 @@
-<div class="relative bg-cover bg-center h-[70vh] w-full text-white" style="background-image: url('<%= asset_path('landing.jpeg') %>');">
+<header class="relative bg-cover bg-center h-[70vh] w-full text-white" style="background-image: url('<%= asset_path('landing.jpeg') %>');">
   <div class="absolute inset-0 bg-black bg-opacity-65"></div>
-  <div class="relative container mx-auto h-full flex items-center px-4 sm:px-6 md:px-8 lg:px-12 justify-center">  <div class="max-w-lg">
+  <div class="relative container mx-auto h-full flex items-center px-4 sm:px-6 md:px-8 lg:px-12 justify-center">  
+    <div class="max-w-lg">
       <div class="flex items-center space-x-2 mb-4 justify-center">
         <span class="w-2 h-2 bg-white rounded-full"></span>
         <span class="w-1/12 h-0.5 bg-white"></span>
@@ -10,5 +11,47 @@
         Complete set of programs designed to help people having mental issues.
       </h1>
     </div>
+  </div>
+</header>
+
+
+<div class="bg-programs-cream py-12 mb-12">
+  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <!-- programs_four_columns Left -->
+    <section class="programs_four_columns_left text-center">
+      <i style="font-size: 2rem;" class="text-brown-text fa fa-money text-2xl mb-4 p-4 rounded-full bg-white" aria-hidden="true"></i>
+      <div class="space-y-2">
+        <p><span class="font-bold">Financial Struggles?</span></p>
+        <p>Discover effective strategies for managing your finances and overcoming financial challenges with confidence.</p>
+      </div> 
+    </section>
+
+    <!-- programs_four_columns Middle Left -->
+    <section class="programs_four_columns_middle_left text-center">
+      <i style="font-size: 2rem;" class="text-brown-text fa fa-flag-checkered text-2xl mb-4 p-4 rounded-full bg-white" aria-hidden="true"></i>
+      <div class="space-y-2">
+        <p><span class="font-bold">Need a Goal?</span></p>
+        <p>Set clear and achievable goals to guide your personal and professional growth, and stay motivated to reach them.</p>
+      </div>
+    </section>
+
+    <!-- programs_four_columns Middle Right -->
+    <section class="programs_four_columns_middle_right text-center">
+      <i style="font-size: 2rem;" class="text-brown-text fa fa-thumbs-down text-2xl mb-4 p-4 rounded-full bg-white" aria-hidden="true"></i>
+      <div class="space-y-2">
+        <p><span class="font-bold">Feeling Low?</span></p>
+        <p>Learn coping mechanisms and techniques to boost your mood and improve your mental health and well-being.</p>
+      </div>
+    </section>
+
+    <!-- programs_four_columns Right -->
+    <section class="programs_four_columns_right text-center">
+      <i style="font-size: 2rem;" class="text-brown-text fa fa-heart text-2xl mb-4 p-4 rounded-full bg-white" aria-hidden="true"></i>
+      <div class="space-y-2">
+        <p><span class="font-bold">Love Problems?</span></p>
+        <p>Receive guidance on navigating romantic relationships, resolving conflicts, and building a strong, healthy connection.</p>
+      </div>
+    </section>
   </div>
 </div>
