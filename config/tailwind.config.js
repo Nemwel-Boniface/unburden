@@ -18,12 +18,14 @@ module.exports = {
         'deep-dark-bg': '#744D3C',
         'cream': '#F7F2EF',
         'cream-bg': '#FFFFFF',
+        'programs-cream': '#F3EBE6',
       },
       colors: {
         'brown-text': '#A57355',
       },
       fontSize: {
         '37px': '37px',
+        '50px': '50px',
         'custom-size': '3rem',
       },
       fontFamily: {
