@@ -25,6 +25,8 @@ module.exports = {
         'brown-text': '#A57355',
       },
       fontSize: {
+        '25px': '25px',
+        '35px': '35px',
         '37px': '37px',
         '50px': '50px',
         'custom-size': '3rem',
