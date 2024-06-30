@@ -1,12 +1,12 @@
 <header class="relative bg-cover bg-center h-[70vh] w-full text-white" style="background-image: url('<%= asset_path('landing.jpeg') %>');">
   <div class="absolute inset-0 bg-black bg-opacity-65"></div>
-  <div class="relative container mx-auto h-full flex items-center px-4 sm:px-6 md:px-8 lg:px-12 justify-center">  
+  <div class="relative container mx-auto h-full flex items-center px-4 sm:px-4 md:px-8 lg:px-12 justify-center">  
     <div class="max-w-lg flex flex-col justify-center items-center text-center">  
       <h1 class="text-37px lg:text-50px font-libre font-bold leading-tight mb-4 text-center">
         Kids & Family
       </h1>
       <p class="text-center">Join our life-changing sessions designed to strengthen family bonds and enhance the well-being of children and adults alike.</p>
-      <div class="bg-transparent-bg p-4 lg:w-3/4 my-4 flex space-x-4 justify-center rounded-full">
+      <div class="bg-transparent-bg p-4 lg:w-3/4 my-4 flex space-x-2 justify-center rounded-full">
         <p>
           <a href="#" class="text-sm md:text-lg bold pr-1 lg:pr-2 underline">Home</a>
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
@@ -17,13 +17,13 @@
           <i class="fa fa-chevron-right text-xs" aria-hidden="true"></i>
         </p>
 
-        <p>Kids & Family</p>
+        <p class="text-sm md:text-lg">Kids & Family</p>
       </div>
     </div>
   </div>
 </header>
 
-<main class="individual_program_body px-4 md:px-12 lg:px-16 py-12 flex flex-col lg:flex-row">
+<main class="individual_program_body px-4 md:px-10 lg:px-10 py-12 flex flex-col lg:flex-row">
   <section class="program_body_left lg:w-3/4 p-4 lg:p-8">
     <h2 class="text-25px lg:text-35px font-libre font-bold leading-tight py-2">This program is perfect for you if</h2>
     <p class="bold py-2">
@@ -76,7 +76,55 @@
     <p class="py-2 mt-8">Call <span class="text-brown-text">0788345647</span> and book an appointment now.</p>
   </section>
 
-  <section class="program_body_right lg:w-1/4 p-4 lg:p-8">
-    <!-- Content for the right section goes here -->
+  <section class="program_body_right lg:w-1/4 p-4 lg:p-4">
+    <div class="explore-programs bg-white shadow-lg rounded-lg p-4">
+      <h3 class="text-lg font-bold mb-4">Explore Programs</h3>
+      <ul class="space-y-2">
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Dating & Relationship</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Grief & Loss Counseling</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Self-Esteem Therapy</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Kids & Family</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Life & Future Planning</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Child Age Therapy</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="newsletter text-center bg-white shadow-lg rounded-lg p-4">
+      <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+      <span class="block mx-auto text-center w-12 h-1 bg-dark-brown-bg my-2"></span>
+      <p class="text-gray-600 mb-4">Join 50,000 subscribers!</p>
+      <form class="space-y-4">
+        <input type="email" placeholder="your-email@example.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+        <button type="submit" class="w-full bg-dark-brown-bg text-white py-2 rounded-lg">Subscribe Now</button>
+      </form>
+      <p class="text-gray-600 mt-4 text-sm">By Subscribing, you agree our <a href="#" class="underline text-brown-text bold">Terms</a></p>
+    </div>
+
+    <div class="advertisement relative bg-white shadow-lg rounded-lg p-4 overflow-hidden min-h-[300px] flex items-center justify-center">
+      <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('<%= asset_path('zoom.jpg') %>');"></div>
+      <div class="relative z-20 text-center text-white p-4">
+        <h3 class="text-lg font-bold">Join the online Yoga Meditation Event this weekend.</h3>
+        <a href="#" class="mt-2 inline-block bg-dark-brown-bg text-white p-2 text-sm rounded-md">Learn More & Register</a>
+      </div>
+    </div>
   </section>
 </main>

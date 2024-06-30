@@ -19,7 +19,8 @@ module.exports = {
         'cream': '#F7F2EF',
         'cream-bg': '#FFFFFF',
         'programs-cream': '#F3EBE6',
-        'transparent-bg':'#544F4E'
+        'transparent-bg':'#544F4E',
+        'gray-bg': '#F9F7F7',
       },
       colors: {
         'brown-text': '#A57355',
