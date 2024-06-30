@@ -1,15 +1,22 @@
-<div class="mx-auto md:w-2/3 w-full flex">
-  <div class="mx-auto">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
+<header class="mb-12 relative bg-cover bg-center h-[70vh] w-full text-white" style="background-image: url('<%= asset_path('landing.jpeg') %>');">
+  <div class="absolute inset-0 bg-black bg-opacity-65"></div>
+  <div class="relative container mx-auto h-full flex items-center px-4 sm:px-6 md:px-8 lg:px-12 justify-center">  
+    <div class="max-w-lg flex flex-col justify-center items-center text-center">  <h1 class="text-37px lg:text-50px font-libre font-bold leading-tight mb-4 text-center">  Kids & Family
+      </h1>
+      <p class="text-center">Join our life-changing sessions designed to strengthen family bonds and enhance the well-being of children and adults alike.</p>
+      <div class="bg-transparent-bg p-4 lg:w-3/4 my-4 flex space-x-4 justify-center rounded-full">
+        <p>
+          <a href="#" class="text-sm md:text-lg bold pr-1 lg:pr-2 underline">Home</a>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </p>
 
-    <%= render @program %>
+        <p>
+          <a href="#" class="text-sm md:text-lg bold pr-1 lg:pr-2 underline">Programs</a>
+          <i class="fa fa-chevron-right text-xs" aria-hidden="true"></i>
+        </p>
 
-    <%= link_to "Edit this program", edit_program_path(@program), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Back to programs", programs_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <div class="inline-block ml-2">
-      <%= button_to "Destroy this program", @program, method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+        <p>Kids & Family</p>
+      </div>
     </div>
   </div>
-</div>
+</header>
