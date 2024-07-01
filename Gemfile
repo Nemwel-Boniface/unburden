@@ -69,3 +69,5 @@ end
 gem 'rubocop', '~> 1.64'
 
 gem 'tailwindcss-rails', '~> 2.6'
+
+gem "devise", "~> 4.9"
