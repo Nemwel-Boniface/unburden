@@ -1,15 +1,130 @@
-<div class="mx-auto md:w-2/3 w-full flex">
-  <div class="mx-auto">
-    <% if notice.present? %>
-      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-    <% end %>
+<header class="relative bg-cover bg-center h-[70vh] w-full text-white" style="background-image: url('<%= asset_path('landing.jpeg') %>');">
+  <div class="absolute inset-0 bg-black bg-opacity-65"></div>
+  <div class="relative container mx-auto h-full flex items-center px-4 sm:px-4 md:px-8 lg:px-12 justify-center">  
+    <div class="max-w-lg flex flex-col justify-center items-center text-center">  
+      <h1 class="text-37px lg:text-50px font-libre font-bold leading-tight mb-4 text-center">
+        Kids & Family
+      </h1>
+      <p class="text-center">Join our life-changing sessions designed to strengthen family bonds and enhance the well-being of children and adults alike.</p>
+      <div class="bg-transparent-bg p-4 lg:w-3/4 my-4 flex space-x-2 justify-center rounded-full">
+        <p>
+          <a href="#" class="text-sm md:text-lg bold pr-1 lg:pr-2 underline">Home</a>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </p>
 
-    <%= render @program %>
+        <p>
+          <a href="#" class="text-sm md:text-lg bold pr-1 lg:pr-2 underline">Programs</a>
+          <i class="fa fa-chevron-right text-xs" aria-hidden="true"></i>
+        </p>
 
-    <%= link_to "Edit this program", edit_program_path(@program), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Back to programs", programs_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <div class="inline-block ml-2">
-      <%= button_to "Destroy this program", @program, method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+        <p class="text-sm md:text-lg">Kids & Family</p>
+      </div>
     </div>
   </div>
-</div>
+</header>
+
+<main class="individual_program_body px-4 md:px-10 lg:px-10 py-12 flex flex-col lg:flex-row">
+  <section class="program_body_left lg:w-3/4 p-4 lg:p-8">
+    <h2 class="text-25px lg:text-35px font-libre font-bold leading-tight py-2">This program is perfect for you if</h2>
+    <p class="bold py-2">
+      If you are looking to improve family dynamics, enhance communication, and build stronger relationships within your family, this program is designed for you.
+    </p>
+    <p class="py-2">
+      Our sessions are tailored to address the unique challenges families face. Whether dealing with conflicts, behavioral issues, or simply aiming for a more harmonious household, we are here to help. Our approach is supportive, empathetic, and designed to empower every family member.
+    </p>
+
+    <div class="items-center lg:h-auto mb-8">
+      <%= image_tag 'mother_holding_child.jpg', alt: "Kids and Family", class: "w-full h-full object-cover rounded-lg lg:rounded-none py-4" %>
+    </div>
+
+    <h2 class="text-25px lg:text-35px font-libre font-bold leading-tight py-2 py-2">Let’s find out why your relationship is being affected by your work life.</h2>
+    <p class="py-2">
+      Balancing work and family life can be challenging. Our program helps you identify the key stressors and develop strategies to manage them effectively, ensuring that your professional life doesn't negatively impact your relationships at home.
+    </p>
+    <ul class="list-disc pl-4 mb-8">
+      <li>Identify and understand the impact of work-related stress on family dynamics.</li>
+      <li>Develop practical solutions to manage work-life balance effectively.</li>
+      <li>Enhance communication and strengthen family bonds.</li>
+    </ul>
+
+    <h2 class="py-2 text-25px lg:text-35px font-libre font-bold leading-tight py-2">How therapy can save your relationship?</h2>
+
+    <p class="py-2">
+      Therapy provides a safe space to explore your concerns, improve understanding, and develop effective communication skills. Our family therapy sessions are designed to address conflicts, enhance relationships, and foster a supportive family environment.
+    </p>
+
+    <div class="flex flex-col lg:flex-row rounded-lg space-y-8 pt-6 lg:space-y-0 lg:space-x-8 py-4 mb-8">
+      <div class="lg:w-1/2 flex justify-center items-center lg:h-auto">
+        <%= image_tag 'zoom.jpg', alt: "Smiling woman", class: "w-full h-full object-cover rounded-lg lg:rounded-none" %>
+      </div>
+      <div class="lg:w-1/2 items-center">
+        <p class="py-2">
+          Through our structured therapy sessions, we help families navigate their challenges, build resilience, and develop a deeper understanding of each other. Our goal is to create a nurturing environment where every member feels valued and heard.
+        </p>
+        <ul class="list-disc pl-4">
+          <li>Address specific family issues in a constructive manner.</li>
+          <li>Learn coping strategies and stress management techniques.</li>
+          <li>Strengthen emotional bonds and foster mutual respect.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="text-25px lg:text-35px font-libre font-bold leading-tight py-2 py-2">Our Therapy Process</h2>
+    <p class="py-2">
+      Our therapy process involves initial assessment sessions to understand your family's needs, followed by personalized therapy plans. We use evidence-based techniques to guide our sessions, ensuring effective and meaningful progress.
+    </p>
+    <p class="py-2 mt-8">Call <span class="text-brown-text">0788345647</span> and book an appointment now.</p>
+  </section>
+
+  <section class="program_body_right lg:w-1/4 p-4 lg:p-4">
+    <div class="explore-programs bg-white shadow-lg rounded-lg p-4">
+      <h3 class="text-lg font-bold mb-4">Explore Programs</h3>
+      <ul class="space-y-2">
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Dating & Relationship</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Grief & Loss Counseling</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Self-Esteem Therapy</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Kids & Family</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Life & Future Planning</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+        <li class="my-4 flex justify-between items-center w-full p-2 bg-gray-100">
+          <a href="#" class="link text-brown-text hover:underline">Child Age Therapy</a>
+          <i class="fa fa-chevron-right text-brown-text" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div class="newsletter text-center bg-white shadow-lg rounded-lg p-4">
+      <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+      <span class="block mx-auto text-center w-12 h-1 bg-dark-brown-bg my-2"></span>
+      <p class="text-gray-600 mb-4">Join 50,000 subscribers!</p>
+      <form class="space-y-4">
+        <input type="email" placeholder="your-email@example.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+        <button type="submit" class="w-full bg-dark-brown-bg text-white py-2 rounded-lg">Subscribe Now</button>
+      </form>
+      <p class="text-gray-600 mt-4 text-sm">By Subscribing, you agree our <a href="#" class="underline text-brown-text bold">Terms</a></p>
+    </div>
+
+    <div class="advertisement relative bg-white shadow-lg rounded-lg p-4 overflow-hidden min-h-[300px] flex items-center justify-center">
+      <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('<%= asset_path('zoom.jpg') %>');"></div>
+      <div class="relative z-20 text-center text-white p-4">
+        <h3 class="text-lg font-bold">Join the online Yoga Meditation Event this weekend.</h3>
+        <a href="#" class="mt-2 inline-block bg-dark-brown-bg text-white p-2 text-sm rounded-md">Learn More & Register</a>
+      </div>
+    </div>
+  </section>
+</main>
