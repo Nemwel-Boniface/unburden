@@ -32,6 +32,14 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
+      ## Other shared columns
+      t.string :first_name,              null: false
+      t.string :last_name,              null: false
+      t.string :location,              null: false
+      t.string :phone_number,              null: false
+      t.string :user_photo,              null: false
+      t.string :role,              null: false, default: "client"
+      t.text :bio
 
       t.timestamps null: false
     end
