@@ -1,0 +1,38 @@
+<div class="min-h-screen flex flex-col lg:flex-row items-center justify-center bg-gray-100">
+  <div class="lg:w-1/2 w-full p-6">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-6">Log in</h2>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field mb-4">
+          <%= f.label :email, class: "block text-gray-700" %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" %>
+        </div>
+
+        <div class="field mb-4">
+          <%= f.label :password, class: "block text-gray-700" %><br />
+          <%= f.password_field :password, autocomplete: "current-password", class: "w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" %>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="field mb-4">
+            <%= f.check_box :remember_me, class: "mr-2" %>
+            <%= f.label :remember_me, class: "text-gray-700" %>
+          </div>
+        <% end %>
+
+        <div class="actions">
+          <%= f.submit "Log in", class: "w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600" %>
+        </div>
+      <% end %>
+
+      <div class="mt-4">
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:w-1/2 w-full h-64 lg:h-auto relative">
+    <%= image_tag 'zoom.jpg', alt: "Login image", class: "object-cover w-full h-full" %>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+  </div>
+</div>

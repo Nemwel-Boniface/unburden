@@ -20,6 +20,8 @@
 
   <body class="p-0"> <!-- Remove all padding from body -->
     <%= render 'layouts/navbar' %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <main class="">
       <%# p-4 md:p-6 lg:p-8 %>
       <%= yield %>

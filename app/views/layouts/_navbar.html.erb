@@ -16,8 +16,8 @@
   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
     <div class="text-2xl font-bold">Unburden</div>
     <div class="hidden md:flex space-x-4 items-center">
-      <a href="#" class="text-gray-700 hover:text-blue-500">Home</a>
-      <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+      <%= link_to "Home", root_path, class: "text-gray-700 hover:text-blue-500"%>
+      <%= link_to "Programs", programs_path, class: "text-gray-700 hover:text-blue-500"%>
       <a href="#" class="text-gray-700 hover:text-blue-500">Contact Us</a>
       <div class="flex items-center space-x-2">
         <span class="inline-flex items-center px-5 py-2 rounded-full bg-top-nav-light-brown-bg text-white">
@@ -29,6 +29,12 @@
         </div>
       </div>
       <a href="#" class="bg-dark-brown-bg text-white px-4 py-2 rounded-md">Book Now</a>
+      <% if user_signed_in? %>
+        <%= link_to "Logout", destroy_user_session_path, class: "block px-4 py-2 text-gray-700 hover:text-blue-500", data: { turbo_method: :delete } %>
+      <% else %>
+        <%= link_to "Login", new_user_session_path, class: "text-gray-700 hover:text-blue-500" %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "text-gray-700 hover:text-blue-500" %>
+      <% end %>
     </div>
     <div class="md:hidden">
       <button id="navbar-toggle" class="text-gray-700 focus:outline-none">
@@ -48,5 +54,24 @@
       </div>
     </div>
     <a href="#" class="block bg-dark-brown-bg text-white px-4 py-2 rounded-md mx-4 my-2 text-center">Book Now</a>
+    <% if user_signed_in? %>
+      <%= link_to "Logout", destroy_user_session_path, class: "block px-4 py-2 text-gray-700 hover:text-blue-500", data: { turbo_method: :delete } %>
+    <% else %>
+      <%= link_to "Login", new_user_session_path, class: "block px-4 py-2 text-gray-700 hover:text-blue-500" %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "block px-4 py-2 text-gray-700 hover:text-blue-500" %>
+    <% end %>
   </div>
 </nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('navbar-toggle').onclick = function() {
+      let menu = document.getElementById('navbar-menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    }
+  });
+</script>
