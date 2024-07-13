@@ -58,11 +58,6 @@
           </div>
 
           <div class="field mb-4">
-            <%= f.label :role, class: "block text-gray-700" %>
-            <%= f.select :role, [['Client', 'client'], ['Psychologist', 'psychologist']], {}, { class: "w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500", onchange: 'showPsychologistFields(this)' } %>
-          </div>
-
-          <div class="field mb-4">
             <%= f.label :password, class: "block text-gray-700" %> <i>(leave blank if you don't want to change it)</i>
             <%= f.password_field :password, placeholder: "Password", autocomplete: "new-password", class: "w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" %>
             <% if @minimum_password_length %>
