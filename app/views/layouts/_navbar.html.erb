@@ -50,3 +50,16 @@
     <a href="#" class="block bg-dark-brown-bg text-white px-4 py-2 rounded-md mx-4 my-2 text-center">Book Now</a>
   </div>
 </nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('navbar-toggle').onclick = function() {
+    let menu = document.getElementById('navbar-menu');
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+    }
+  }
+});
+</script>
