@@ -37,7 +37,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.string :last_name,              null: false
       t.string :location,              null: false
       t.string :phone_number,              null: false
-      t.string :user_photo,              null: false
+      # t.string :user_photo,              null: false
       t.string :role,              null: false, default: "client"
       t.text :bio
       t.string :specialization, default: "Heart Breaks"
