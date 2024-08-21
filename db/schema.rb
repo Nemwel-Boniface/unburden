@@ -53,6 +53,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_21_073900) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "location", null: false
+    t.string "phone_number", null: false
+    t.text "bio"
+    t.string "specialization", default: "Heart Breaks"
+    t.text "insurance_accepted", default: "yes"
+    t.integer "years_of_experience", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_psychologists_on_email", unique: true
