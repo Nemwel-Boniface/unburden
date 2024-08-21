@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # Associations
-  has_one_attached :user_photo 
+  has_one_attached :user_photo
 end
