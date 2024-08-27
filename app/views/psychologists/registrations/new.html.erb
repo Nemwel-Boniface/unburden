@@ -34,21 +34,18 @@
 
           <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
             <div class="field mb-4">
-  <%= f.label :specialization, class: "block text-gray-700" %>
-  <%= f.select :specialization, options_for_select([
-    ['Depression', 'depression'],
-    ['Anxiety', 'anxiety'],
-    ['Trauma', 'trauma'],
-    ['Couples Therapy', 'couples_therapy'],
-    ['Child Psychology', 'child_psychology'],
-    ['Addiction', 'addiction'],
-    ['Stress Management', 'stress_management'],
-    ['Career Counseling', 'career_counseling']
-  ], selected: f.object.specialization.split(',')), {}, class: "w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500", multiple: true %>
-</div>
-
-
-
+              <%= f.label :specialization, class: "block text-gray-700" %>
+              <%= f.select :specialization, options_for_select([
+                ['Depression', 'depression'],
+                ['Anxiety', 'anxiety'],
+                ['Trauma', 'trauma'],
+                ['Couples Therapy', 'couples_therapy'],
+                ['Child Psychology', 'child_psychology'],
+                ['Addiction', 'addiction'],
+                ['Stress Management', 'stress_management'],
+                ['Career Counseling', 'career_counseling']
+             ], selected: f.object.specialization.present? ? f.object.specialization.split(',') : nil), {}, class: "w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500", multiple: true, name: "psychologist[specialization][]" %>
+            </div>
 
             <div class="field w-full md:w-1/2">
               <%= f.label :years_of_experience, class: "block text-gray-700" %>

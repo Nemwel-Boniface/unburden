@@ -6,7 +6,7 @@ class Psychologists::RegistrationsController < Devise::RegistrationsController
   def create
     build_resource(sign_up_params)
 
-    # Convert array to comma-separated string
+    # Convert array to comma-separated string if it's an array
     if resource.specialization.is_a?(Array)
       resource.specialization = resource.specialization.join(',')
     end
@@ -37,11 +37,10 @@ class Psychologists::RegistrationsController < Devise::RegistrationsController
   end
 
   def sign_up_params
-    # Ensure we handle the specialization field as an array if it's passed that way
-    params = super
-    if params[:psychologist] && params[:psychologist][:specialization].is_a?(Array)
-      params[:psychologist][:specialization] = params[:psychologist][:specialization].join(',')
-    end
-    params
+    # Use the super method to ensure Devise handles other parameters
+    params.require(:psychologist).permit(
+      :first_name, :last_name, :location, :phone_number, :bio,
+      { specialization: [] }, :insurance_accepted, :years_of_experience, :email, :password, :password_confirmation
+    )
   end
 end
